@@ -1,0 +1,12 @@
+checkout the repo to 
+/dotfiles/
+
+link
+
+ln -s /home/vlad/dotfiles/vimconf/ .vim
+ln -s /home/vlad/dotfiles/vimconf/vimrc .vimrc
+
+from repo:
+git submodule init && git submodule update
+
+ENJOY
