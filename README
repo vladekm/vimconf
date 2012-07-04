@@ -13,6 +13,50 @@ ln -s /home/<USERNAME>/dotfiles/vimconf/vimrc .vimrc
 4. from repo:
 git submodule init && git submodule update
 
-5. ENJOY
+5. configure ruby support for command-t
+sudo aptitude install ruby ruby-dev
+sudo apt-get install vim-nox;
+cd ~/.vim/bundle/command-t/ruby/command-t/
+ruby extconf.rb
+make
+
+6. Stick this in your profile init:
+#COLOURS IN VIM
+export TERM='xterm-256color'
+
+7. ENJOY
+
+SOME USEFUL COMMANDS:
+/o - search facility (Rubby support needed)
+/t - NERDTree
+/l - Tagbar
+/cc - outcomment a selection
+/ci - remove comments from a selection
+
+INSTALLED PLUGINS:
+
+Plugins are managed with pathogen
+(https://github.com/tpope/vim-pathogen)
+
+Command-t - pattern based file opener
+(http://git.wincent.com/command-t.git)
+
+DelimitMate: Intelligent autocompletion for quotes, parenthesis, brackets etc.
+(https://github.com/Raimondi/delimitMate)
+
+CloseTag: Intelligently close HTML tags
+(http://github.com/docunext/closetag.vim)
+
+Syntax checker
+(https://github.com/scrooloose/syntastic)
+
+NERDCommenter: Fast comment manipulations
+(https://github.com/scrooloose/nerdcommenter)
+
+Tagbar: Awesome source code [tag]browsing
+(https://github.com/majutsushi/tagbar)
+
+Solarized Colorscheme
+(https://github.com/altercation/vim-colors-solarized)
 
 P.S. Thanks to http://mirnazim.org/writings/vim-plugins-i-use/
