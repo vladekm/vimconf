@@ -1,12 +1,18 @@
-checkout the repo to 
+1. install necessary dependencies
+sudo aptitude install exuberant-ctags
+sudo apt-get instlal pyflakes
+
+2. checkout the repo to 
 /dotfiles/
 
-link
+3. link
 
-ln -s /home/vlad/dotfiles/vimconf/ .vim
-ln -s /home/vlad/dotfiles/vimconf/vimrc .vimrc
+ln -s /home/<USERNAME>/dotfiles/vimconf/ .vim
+ln -s /home/<USERNAME>/dotfiles/vimconf/vimrc .vimrc
 
-from repo:
+4. from repo:
 git submodule init && git submodule update
 
-ENJOY
+5. ENJOY
+
+P.S. Thanks to http://mirnazim.org/writings/vim-plugins-i-use/
