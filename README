@@ -1,6 +1,6 @@
 1. install necessary dependencies
 sudo aptitude install exuberant-ctags
-sudo apt-get instlal pyflakes
+sudo apt-get install pyflakes
 
 2. checkout the repo to 
 /dotfiles/
