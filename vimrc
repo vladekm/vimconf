@@ -24,10 +24,11 @@ let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
 " solarized
+syntax enable
 set background=light
 let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
 colorscheme solarized
 
 " Make the command line two lines high and change the statusline display to
@@ -56,10 +57,4 @@ set backspace=indent,eol,start
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 noremap <leader>t <Esc>:NERDTree<CR>
-
-
-
-
-
-
- 
+let NERDTreeIgnore = ['\.pyc$']
