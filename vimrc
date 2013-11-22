@@ -65,9 +65,9 @@ set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 
-" Fugitive
-noremap <leader>gb <Esc>:Gblame<CR>
-
+" These look interesting but do not play nicely with solarized
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
 
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
@@ -80,3 +80,7 @@ for p in sys.path:
   if os.path.isdir(p):
     vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+
+
+set colorcolumn=80
+
