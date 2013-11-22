@@ -65,6 +65,10 @@ set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 
+" Fugitive
+noremap <leader>gb <Esc>:Gblame<CR>
+
+
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " and jump to it!
