@@ -50,7 +50,7 @@ set smarttab
 set expandtab
 set autoindent
 set backspace=indent,eol,start
-set tw=78
+" set tw=78
 
 " NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
