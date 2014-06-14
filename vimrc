@@ -35,12 +35,12 @@ colorscheme solarized
 " something that looks useful.
 set cmdheight=2
 set laststatus=2
-set statusline=[%l,%v\ %P%M][CWD:\ %{CWD()}][FILE:\ %f]\ %r%h%w\ (%{&ff})\%{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*
+set statusline=[%l,%v\ %P%M][%{CWD()}/%f]\ %r%h%w\ (%{&ff})\%{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*
 set showcmd
 set showmode
 set number
 function! CWD()
-   let curdir = substitute(getcwd(), '/Users/vladmettler/', "~/", "g")
+   let curdir = substitute(getcwd(), $HOME, "~", "g")
    return curdir
 endfunction
 
