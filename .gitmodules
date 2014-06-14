@@ -25,9 +25,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "typescript-vim"]
-	path = typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
