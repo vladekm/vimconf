@@ -27,8 +27,8 @@ nnoremap <leader>l :TagbarToggle<CR>
 syntax enable
 set background=light
 let g:solarized_termcolors=256
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 colorscheme solarized
 
 " Make the command line two lines high and change the statusline display to
